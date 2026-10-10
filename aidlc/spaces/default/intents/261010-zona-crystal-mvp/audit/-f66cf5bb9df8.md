@@ -7277,3 +7277,1918 @@
 **Error**: --help expects a value, got end of arguments.
 
 ---
+
+## Error Logged
+**Timestamp**: 2026-10-10T09:53:41Z
+**Event**: ERROR_LOGGED
+**Tool**: aidlc-worktree
+**Command**: aidlc-worktree engine worktree create --slug zona-crystal-full-demo --base main
+**Error**: [slug=zona-crystal-full-demo] Base branch does not exist locally: main
+
+---
+
+## Worktree Created
+**Timestamp**: 2026-10-10T09:54:43Z
+**Event**: WORKTREE_CREATED
+**Bolt slug**: zona-crystal-full-demo
+**Worktree path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo
+**Branch name**: bolt-c15a7fe4_zona-crystal-full-demo
+**Base branch**: main
+**Base commit**: 4b28567b70bcaa066b272579630b46c74721b552
+**Base Source Listing**: sha256:1203454a99fdac01ad965e9e052ddceb1a5df1aec93cfc936ee51701b7a1cd3b
+**Repo**: -
+**Intent record**: aidlc/spaces/default/intents/261010-zona-crystal-mvp
+
+---
+
+## Error Logged
+**Timestamp**: 2026-10-10T09:54:43Z
+**Event**: ERROR_LOGGED
+**Tool**: aidlc-worktree
+**Command**: aidlc-worktree engine worktree create --slug zona-crystal-full-demo --base main
+**Error**: [slug=zona-crystal-full-demo] git worktree add failed: Preparing worktree (new branch 'bolt-c15a7fe4_zona-crystal-full-demo')\nfatal: cannot lock ref 'refs/heads/bolt-c15a7fe4_zona-crystal-full-demo': Unable to create '<project-dir>/.git/refs/heads/bolt-c15a7fe4_zona-crystal-full-demo.lock': Operation not permitted
+
+---
+
+## Worktree Created
+**Timestamp**: 2026-10-10T09:55:12Z
+**Event**: WORKTREE_CREATED
+**Bolt slug**: zona-crystal-full-demo
+**Worktree path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo
+**Branch name**: bolt-c15a7fe4_zona-crystal-full-demo
+**Base branch**: main
+**Base commit**: 4b28567b70bcaa066b272579630b46c74721b552
+**Base Source Listing**: sha256:1203454a99fdac01ad965e9e052ddceb1a5df1aec93cfc936ee51701b7a1cd3b
+**Repo**: -
+**Intent record**: aidlc/spaces/default/intents/261010-zona-crystal-mvp
+
+---
+
+## Session Compacted
+**Timestamp**: 2026-10-10T09:55:18Z
+**Event**: SESSION_COMPACTED
+**Current Stage**: functional-design
+**State Validity**: valid
+
+---
+
+## Error Logged
+**Timestamp**: 2026-10-10T09:57:21Z
+**Event**: ERROR_LOGGED
+**Tool**: aidlc-bolt
+**Command**: aidlc-bolt engine bolt start --help
+**Error**: --help expects a value, got end of arguments.
+
+---
+
+## Error Logged
+**Timestamp**: 2026-10-10T09:57:27Z
+**Event**: ERROR_LOGGED
+**Tool**: aidlc-bolt
+**Command**: aidlc-bolt engine bolt start
+**Error**: Missing --name <bolt-name or csv>
+
+---
+
+## Error Logged
+**Timestamp**: 2026-10-10T09:58:42Z
+**Event**: ERROR_LOGGED
+**Tool**: aidlc-state
+**Command**: aidlc-state engine state fork
+**Error**: [slug=(missing)] Missing --slug <slug>
+
+---
+
+## State Forked
+**Timestamp**: 2026-10-10T09:58:56Z
+**Event**: STATE_FORKED
+**Bolt slug**: zona-crystal-full-demo
+**Worktree path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo
+**Source state hash**: 61dac4daf92bd47fde3db92c10003d6ccbb7b9b808bf726c4972abd0bcdbef02
+**Target state hash**: 61dac4daf92bd47fde3db92c10003d6ccbb7b9b808bf726c4972abd0bcdbef02
+
+---
+
+## Audit Forked
+**Timestamp**: 2026-10-10T09:59:02Z
+**Event**: AUDIT_FORKED
+**Bolt slug**: zona-crystal-full-demo
+**Source Audit Hash**: bcd4e915b876a55524db5c680e9484e47fd4cf302403c67b3d7805f9f29e70aa
+**Fork Boundary**: 269726
+
+---
+
+## Bolt Started
+**Timestamp**: 2026-10-10T09:59:11Z
+**Event**: BOLT_STARTED
+**Bolt names**: zona-crystal-full-demo
+**Batch number**: 1
+**Walking skeleton**: false
+**Bolt slug**: zona-crystal-full-demo
+**Base commit**: 4b28567b70bcaa066b272579630b46c74721b552
+**Base Source Listing**: sha256:1203454a99fdac01ad965e9e052ddceb1a5df1aec93cfc936ee51701b7a1cd3b
+
+---
+
+## Error Logged
+**Timestamp**: 2026-10-10T09:59:11Z
+**Event**: ERROR_LOGGED
+**Tool**: aidlc-state
+**Command**: aidlc-state engine state fork --slug zona-crystal-full-demo --project-dir <project-dir>
+**Error**: [slug=zona-crystal-full-demo] [slug=zona-crystal-full-demo] slug already in Bolt Refs (current: [zona-crystal-full-demo]). If a prior fork failed mid-operation, run 'aidlc-worktree discard --slug zona-crystal-full-demo' and 'aidlc-state.ts merge --slug zona-crystal-full-demo' (which will exit "already merged" cleanly) or remove the stale entry from main state, then retry.
+
+---
+
+## Bolt Failed
+**Timestamp**: 2026-10-10T09:59:11Z
+**Event**: BOLT_FAILED
+**Failed Bolt**: zona-crystal-full-demo
+**Bolt slug**: zona-crystal-full-demo
+**Error summary**: state-fork-failed: {"error":"[slug=zona-crystal-full-demo] [slug=zona-crystal-full-demo] slug already in Bolt Refs (current: [zona-crystal-full-demo]). If a prior fork failed mid-operation, run 'aidlc-worktree discard --slug zona-crystal-full-demo' and 'aidlc-state.ts merge --slug zona-crystal-full-demo' (which will exit \"already merged\" cleanly) or remove the stale entry from main state, then retry."}\n
+
+---
+
+## Bolt Started
+**Timestamp**: 2026-10-10T09:59:22Z
+**Event**: BOLT_STARTED
+**Bolt names**: zona-crystal-full-demo
+**Batch number**: 1
+**Walking skeleton**: false
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T09:59:38Z
+**Event**: SENSOR_FIRED
+**Fire id**: f7c439b6
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/config.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T09:59:38Z
+**Event**: SENSOR_PASSED
+**Fire id**: f7c439b6
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/config.js
+**Duration ms**: 47
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T09:59:38Z
+**Event**: SENSOR_FIRED
+**Fire id**: ce577d2b
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/server.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T09:59:39Z
+**Event**: SENSOR_PASSED
+**Fire id**: ce577d2b
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/server.js
+**Duration ms**: 53
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T09:59:39Z
+**Event**: SENSOR_FIRED
+**Fire id**: 544c379b
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/eslint.config.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T09:59:39Z
+**Event**: SENSOR_PASSED
+**Fire id**: 544c379b
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/eslint.config.js
+**Duration ms**: 45
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T09:59:40Z
+**Event**: SENSOR_FIRED
+**Fire id**: b8ff35b8
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/fixtures.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T09:59:40Z
+**Event**: SENSOR_PASSED
+**Fire id**: b8ff35b8
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/fixtures.js
+**Duration ms**: 53
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T09:59:59Z
+**Event**: SENSOR_FIRED
+**Fire id**: aad83deb
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/conversation-memory/schema.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T09:59:59Z
+**Event**: SENSOR_PASSED
+**Fire id**: aad83deb
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/conversation-memory/schema.js
+**Duration ms**: 46
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:00:31Z
+**Event**: SENSOR_FIRED
+**Fire id**: 56f159da
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/schema.test.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:00:31Z
+**Event**: SENSOR_PASSED
+**Fire id**: 56f159da
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/schema.test.js
+**Duration ms**: 46
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:00:58Z
+**Event**: SENSOR_FIRED
+**Fire id**: 1124cbc9
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/deadline.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:00:58Z
+**Event**: SENSOR_PASSED
+**Fire id**: 1124cbc9
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/deadline.js
+**Duration ms**: 50
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:00:58Z
+**Event**: SENSOR_FIRED
+**Fire id**: 081422c1
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/conversation-memory/local-store.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:00:58Z
+**Event**: SENSOR_PASSED
+**Fire id**: 081422c1
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/conversation-memory/local-store.js
+**Duration ms**: 46
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:00:59Z
+**Event**: SENSOR_FIRED
+**Fire id**: 385e1979
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/conversation-memory/memory.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:00:59Z
+**Event**: SENSOR_PASSED
+**Fire id**: 385e1979
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/conversation-memory/memory.js
+**Duration ms**: 48
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:01:22Z
+**Event**: SENSOR_FIRED
+**Fire id**: c3fa0d63
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/memory.test.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:01:22Z
+**Event**: SENSOR_PASSED
+**Fire id**: c3fa0d63
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/memory.test.js
+**Duration ms**: 46
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:02:05Z
+**Event**: SENSOR_FIRED
+**Fire id**: c8df81e0
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/crystal-knowledge/content.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:02:05Z
+**Event**: SENSOR_PASSED
+**Fire id**: c8df81e0
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/crystal-knowledge/content.js
+**Duration ms**: 45
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:02:06Z
+**Event**: SENSOR_FIRED
+**Fire id**: 3f99f89f
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/crystal-knowledge/knowledge.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:02:06Z
+**Event**: SENSOR_PASSED
+**Fire id**: 3f99f89f
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/crystal-knowledge/knowledge.js
+**Duration ms**: 46
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:02:22Z
+**Event**: SENSOR_FIRED
+**Fire id**: 3460eaff
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/knowledge.test.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:02:22Z
+**Event**: SENSOR_PASSED
+**Fire id**: 3460eaff
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/knowledge.test.js
+**Duration ms**: 46
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:02:51Z
+**Event**: SENSOR_FIRED
+**Fire id**: 42d82782
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/experience.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:02:51Z
+**Event**: SENSOR_PASSED
+**Fire id**: 42d82782
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/experience.js
+**Duration ms**: 49
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:02:53Z
+**Event**: SENSOR_FIRED
+**Fire id**: 77d90c4b
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/experience.test.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:02:54Z
+**Event**: SENSOR_PASSED
+**Fire id**: 77d90c4b
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/experience.test.js
+**Duration ms**: 46
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:03:28Z
+**Event**: SENSOR_FIRED
+**Fire id**: 51dab3a3
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/validation.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:03:28Z
+**Event**: SENSOR_PASSED
+**Fire id**: 51dab3a3
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/validation.js
+**Duration ms**: 46
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:03:28Z
+**Event**: SENSOR_FIRED
+**Fire id**: 692373f7
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/logger.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:03:29Z
+**Event**: SENSOR_PASSED
+**Fire id**: 692373f7
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/logger.js
+**Duration ms**: 46
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:03:29Z
+**Event**: SENSOR_FIRED
+**Fire id**: ef6c928d
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/http.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:03:29Z
+**Event**: SENSOR_PASSED
+**Fire id**: ef6c928d
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/http.js
+**Duration ms**: 45
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:04:01Z
+**Event**: SENSOR_FIRED
+**Fire id**: 045e0584
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/server.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:04:01Z
+**Event**: SENSOR_PASSED
+**Fire id**: 045e0584
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/server.js
+**Duration ms**: 49
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:04:02Z
+**Event**: SENSOR_FIRED
+**Fire id**: c7aab248
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/http.test.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:04:02Z
+**Event**: SENSOR_PASSED
+**Fire id**: c7aab248
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/http.test.js
+**Duration ms**: 61
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:04:16Z
+**Event**: SENSOR_FIRED
+**Fire id**: 6cb1bf25
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/http.test.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:04:16Z
+**Event**: SENSOR_PASSED
+**Fire id**: 6cb1bf25
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/http.test.js
+**Duration ms**: 47
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:05:22Z
+**Event**: SENSOR_FIRED
+**Fire id**: 107f5bf2
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/public/ui.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:05:22Z
+**Event**: SENSOR_PASSED
+**Fire id**: 107f5bf2
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/public/ui.js
+**Duration ms**: 52
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:05:22Z
+**Event**: SENSOR_FIRED
+**Fire id**: a506c6c0
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/public/app.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:05:22Z
+**Event**: SENSOR_PASSED
+**Fire id**: a506c6c0
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/public/app.js
+**Duration ms**: 46
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:05:24Z
+**Event**: SENSOR_FIRED
+**Fire id**: 2a5c6303
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/ui.test.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:05:24Z
+**Event**: SENSOR_PASSED
+**Fire id**: 2a5c6303
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/ui.test.js
+**Duration ms**: 46
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:06:16Z
+**Event**: SENSOR_FIRED
+**Fire id**: ab86ad74
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/consultation/profiles.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:06:16Z
+**Event**: SENSOR_PASSED
+**Fire id**: ab86ad74
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/consultation/profiles.js
+**Duration ms**: 49
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:06:17Z
+**Event**: SENSOR_FIRED
+**Fire id**: 9b147d0f
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/consultation/model-adapter.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:06:17Z
+**Event**: SENSOR_PASSED
+**Fire id**: 9b147d0f
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/consultation/model-adapter.js
+**Duration ms**: 48
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:06:17Z
+**Event**: SENSOR_FIRED
+**Fire id**: 203f29be
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/consultation/consultation.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:06:17Z
+**Event**: SENSOR_PASSED
+**Fire id**: 203f29be
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/consultation/consultation.js
+**Duration ms**: 46
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:06:49Z
+**Event**: SENSOR_FIRED
+**Fire id**: 5159c669
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/experience.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:06:49Z
+**Event**: SENSOR_PASSED
+**Fire id**: 5159c669
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/experience.js
+**Duration ms**: 54
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:06:52Z
+**Event**: SENSOR_FIRED
+**Fire id**: 60519d3c
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/server.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:06:52Z
+**Event**: SENSOR_PASSED
+**Fire id**: 60519d3c
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/server.js
+**Duration ms**: 72
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:07:25Z
+**Event**: SENSOR_FIRED
+**Fire id**: c780477b
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/consultation.test.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:07:25Z
+**Event**: SENSOR_PASSED
+**Fire id**: c780477b
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/consultation.test.js
+**Duration ms**: 48
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:07:25Z
+**Event**: SENSOR_FIRED
+**Fire id**: cd891e33
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/experience.test.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:07:26Z
+**Event**: SENSOR_PASSED
+**Fire id**: cd891e33
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/experience.test.js
+**Duration ms**: 47
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:07:59Z
+**Event**: SENSOR_FIRED
+**Fire id**: 82e1452c
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/conversation-memory/legacy-projection.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:07:59Z
+**Event**: SENSOR_PASSED
+**Fire id**: 82e1452c
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/conversation-memory/legacy-projection.js
+**Duration ms**: 47
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:08:00Z
+**Event**: SENSOR_FIRED
+**Fire id**: d31bb27c
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/conversation-memory/firestore-store.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:08:00Z
+**Event**: SENSOR_PASSED
+**Fire id**: d31bb27c
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/conversation-memory/firestore-store.js
+**Duration ms**: 47
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:08:04Z
+**Event**: SENSOR_FIRED
+**Fire id**: da49229a
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/server.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:08:04Z
+**Event**: SENSOR_PASSED
+**Fire id**: da49229a
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/server.js
+**Duration ms**: 46
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:08:04Z
+**Event**: SENSOR_FIRED
+**Fire id**: e892018b
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/memory.test.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:08:04Z
+**Event**: SENSOR_PASSED
+**Fire id**: e892018b
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/memory.test.js
+**Duration ms**: 47
+**Note**: tool-unavailable
+
+---
+
+## Session Compacted
+**Timestamp**: 2026-10-10T10:08:06Z
+**Event**: SESSION_COMPACTED
+**Current Stage**: functional-design
+**State Validity**: valid
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:09:38Z
+**Event**: SENSOR_FIRED
+**Fire id**: ca227614
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/memory.test.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:09:38Z
+**Event**: SENSOR_PASSED
+**Fire id**: ca227614
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/memory.test.js
+**Duration ms**: 54
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:10:16Z
+**Event**: SENSOR_FIRED
+**Fire id**: 401a2fe0
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/memory.test.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:10:16Z
+**Event**: SENSOR_PASSED
+**Fire id**: 401a2fe0
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/memory.test.js
+**Duration ms**: 47
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:10:50Z
+**Event**: SENSOR_FIRED
+**Fire id**: f2809307
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/line-messages.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:10:50Z
+**Event**: SENSOR_PASSED
+**Fire id**: f2809307
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/line-messages.js
+**Duration ms**: 45
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:10:53Z
+**Event**: SENSOR_FIRED
+**Fire id**: 12e8c9a1
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/line-adapter.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:10:53Z
+**Event**: SENSOR_PASSED
+**Fire id**: 12e8c9a1
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/line-adapter.js
+**Duration ms**: 45
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:10:55Z
+**Event**: SENSOR_FIRED
+**Fire id**: 070a815a
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/server.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:10:55Z
+**Event**: SENSOR_PASSED
+**Fire id**: 070a815a
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/server.js
+**Duration ms**: 46
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:11:26Z
+**Event**: SENSOR_FIRED
+**Fire id**: 7ca7761b
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/line.test.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:11:26Z
+**Event**: SENSOR_PASSED
+**Fire id**: 7ca7761b
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/line.test.js
+**Duration ms**: 47
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:11:35Z
+**Event**: SENSOR_FIRED
+**Fire id**: 38972902
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/line.test.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:11:35Z
+**Event**: SENSOR_PASSED
+**Fire id**: 38972902
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/line.test.js
+**Duration ms**: 46
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:12:49Z
+**Event**: SENSOR_FIRED
+**Fire id**: 4ef0d769
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/public/app.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:12:49Z
+**Event**: SENSOR_PASSED
+**Fire id**: 4ef0d769
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/public/app.js
+**Duration ms**: 49
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:12:52Z
+**Event**: SENSOR_FIRED
+**Fire id**: 02c3c41e
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/public/ui.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:12:52Z
+**Event**: SENSOR_PASSED
+**Fire id**: 02c3c41e
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/public/ui.js
+**Duration ms**: 46
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:13:38Z
+**Event**: SENSOR_FIRED
+**Fire id**: 83608d62
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/conversation-memory/schema.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:13:38Z
+**Event**: SENSOR_PASSED
+**Fire id**: 83608d62
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/conversation-memory/schema.js
+**Duration ms**: 46
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:13:41Z
+**Event**: SENSOR_FIRED
+**Fire id**: 2f061f25
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/logger.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:13:41Z
+**Event**: SENSOR_PASSED
+**Fire id**: 2f061f25
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/logger.js
+**Duration ms**: 46
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:13:44Z
+**Event**: SENSOR_FIRED
+**Fire id**: 742379a0
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/http.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:13:44Z
+**Event**: SENSOR_PASSED
+**Fire id**: 742379a0
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/http.js
+**Duration ms**: 46
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:14:09Z
+**Event**: SENSOR_FIRED
+**Fire id**: a9fd0913
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/ui.test.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:14:09Z
+**Event**: SENSOR_PASSED
+**Fire id**: a9fd0913
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/ui.test.js
+**Duration ms**: 46
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:15:49Z
+**Event**: SENSOR_FIRED
+**Fire id**: 7fc26397
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/consultation/consultation.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:15:49Z
+**Event**: SENSOR_PASSED
+**Fire id**: 7fc26397
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/consultation/consultation.js
+**Duration ms**: 47
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:15:51Z
+**Event**: SENSOR_FIRED
+**Fire id**: 2d77bf9d
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/line-messages.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:15:51Z
+**Event**: SENSOR_PASSED
+**Fire id**: 2d77bf9d
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/line-messages.js
+**Duration ms**: 45
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:15:53Z
+**Event**: SENSOR_FIRED
+**Fire id**: 40d33885
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/config.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:15:54Z
+**Event**: SENSOR_PASSED
+**Fire id**: 40d33885
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/config.js
+**Duration ms**: 48
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:15:56Z
+**Event**: SENSOR_FIRED
+**Fire id**: 28a2c9fc
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/http.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:15:56Z
+**Event**: SENSOR_PASSED
+**Fire id**: 28a2c9fc
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/http.js
+**Duration ms**: 49
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:15:58Z
+**Event**: SENSOR_FIRED
+**Fire id**: 0b12b197
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/consultation/profiles.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:15:58Z
+**Event**: SENSOR_PASSED
+**Fire id**: 0b12b197
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/consultation/profiles.js
+**Duration ms**: 50
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:19:49Z
+**Event**: SENSOR_FIRED
+**Fire id**: a7750131
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/delivery.test.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:19:49Z
+**Event**: SENSOR_PASSED
+**Fire id**: a7750131
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/delivery.test.js
+**Duration ms**: 51
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:20:37Z
+**Event**: SENSOR_FIRED
+**Fire id**: 9cc2c016
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/ui.test.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:20:37Z
+**Event**: SENSOR_PASSED
+**Fire id**: 9cc2c016
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/ui.test.js
+**Duration ms**: 49
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:20:37Z
+**Event**: SENSOR_FIRED
+**Fire id**: 2a9804df
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/experience.test.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:20:37Z
+**Event**: SENSOR_PASSED
+**Fire id**: 2a9804df
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/experience.test.js
+**Duration ms**: 46
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:20:38Z
+**Event**: SENSOR_FIRED
+**Fire id**: b9186194
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/schema.test.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:20:38Z
+**Event**: SENSOR_PASSED
+**Fire id**: b9186194
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/schema.test.js
+**Duration ms**: 45
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:20:56Z
+**Event**: SENSOR_FIRED
+**Fire id**: 8cdb31ab
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/deadline.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:20:56Z
+**Event**: SENSOR_PASSED
+**Fire id**: 8cdb31ab
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/deadline.js
+**Duration ms**: 50
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:21:40Z
+**Event**: SENSOR_FIRED
+**Fire id**: 4490de75
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/conversation-memory/schema.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:21:40Z
+**Event**: SENSOR_PASSED
+**Fire id**: 4490de75
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/conversation-memory/schema.js
+**Duration ms**: 52
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:21:40Z
+**Event**: SENSOR_FIRED
+**Fire id**: d2661d28
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/schema.test.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:21:41Z
+**Event**: SENSOR_PASSED
+**Fire id**: d2661d28
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/schema.test.js
+**Duration ms**: 45
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:21:41Z
+**Event**: SENSOR_FIRED
+**Fire id**: 45614a14
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/http.test.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:21:41Z
+**Event**: SENSOR_PASSED
+**Fire id**: 45614a14
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/http.test.js
+**Duration ms**: 46
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:23:14Z
+**Event**: SENSOR_FIRED
+**Fire id**: d24bb2cf
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/line-adapter.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:23:14Z
+**Event**: SENSOR_PASSED
+**Fire id**: d24bb2cf
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/line-adapter.js
+**Duration ms**: 51
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:23:14Z
+**Event**: SENSOR_FIRED
+**Fire id**: 851d3a68
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/conversation-memory/memory.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:23:14Z
+**Event**: SENSOR_PASSED
+**Fire id**: 851d3a68
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/conversation-memory/memory.js
+**Duration ms**: 46
+**Note**: tool-unavailable
+
+---
+
+## Error Logged
+**Timestamp**: 2026-10-10T10:23:30Z
+**Event**: ERROR_LOGGED
+**Tool**: aidlc-bolt
+**Command**: aidlc-bolt engine bolt complete
+**Error**: Missing --name <bolt-name or csv>
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:23:31Z
+**Event**: SENSOR_FIRED
+**Fire id**: b4b22757
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/conversation-memory/firestore-store.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:23:31Z
+**Event**: SENSOR_PASSED
+**Fire id**: b4b22757
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/conversation-memory/firestore-store.js
+**Duration ms**: 50
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:23:31Z
+**Event**: SENSOR_FIRED
+**Fire id**: 0ca34db4
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/consultation/model-adapter.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:23:31Z
+**Event**: SENSOR_PASSED
+**Fire id**: 0ca34db4
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/consultation/model-adapter.js
+**Duration ms**: 48
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:24:01Z
+**Event**: SENSOR_FIRED
+**Fire id**: 209e7b69
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/consultation/model-adapter.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:24:01Z
+**Event**: SENSOR_PASSED
+**Fire id**: 209e7b69
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/consultation/model-adapter.js
+**Duration ms**: 48
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:24:02Z
+**Event**: SENSOR_FIRED
+**Fire id**: c2c27697
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/ui.test.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:24:02Z
+**Event**: SENSOR_PASSED
+**Fire id**: c2c27697
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/ui.test.js
+**Duration ms**: 51
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:24:22Z
+**Event**: SENSOR_FIRED
+**Fire id**: fc3dedab
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/deadline.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:24:22Z
+**Event**: SENSOR_PASSED
+**Fire id**: fc3dedab
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/deadline.js
+**Duration ms**: 50
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:25:16Z
+**Event**: SENSOR_FIRED
+**Fire id**: f61576f9
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/experience.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:25:16Z
+**Event**: SENSOR_PASSED
+**Fire id**: f61576f9
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/experience.js
+**Duration ms**: 46
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:26:09Z
+**Event**: SENSOR_FIRED
+**Fire id**: dad824cb
+**Sensor ID**: traceability
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/aidlc/spaces/default/intents/261010-zona-crystal-mvp/construction/u1-zona-crystal-bot/code-generation/traceability.json
+
+---
+
+## Sensor Failed
+**Timestamp**: 2026-10-10T10:26:09Z
+**Event**: SENSOR_FAILED
+**Fire id**: dad824cb
+**Sensor ID**: traceability
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/aidlc/spaces/default/intents/261010-zona-crystal-mvp/construction/u1-zona-crystal-bot/code-generation/traceability.json
+**Detail path**: aidlc/spaces/default/intents/261010-zona-crystal-mvp/.aidlc-engine/sensors/code-generation/traceability-dad824cb.md
+**Findings count**: 100
+
+---
+
+## Subagent Completed
+**Timestamp**: 2026-10-10T10:27:39Z
+**Event**: SUBAGENT_COMPLETED
+**Agent Type**: aidlc-developer-agent
+**Agent ID**: 01a12534-fe9e-7cb0-a643-876558bd9508
+**Message**: 實作已凍結供審查。\n\n- 全檢 exit0：61 測試通過，零失敗／跳過；格式與 lint 通過。\n- audit 零漏洞；53 檔 manifest、100-ID traceability、code-summary 已完成。\n- 外部服務與人工尺寸／鍵盤限制已明列。\n- 26679 服務與展示記憶保留；未 commit、merge 或 report complete。
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-10T10:27:59Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-zona-crystal-mvp/.aidlc-engine/reviewer-dispatch.json
+**Context**: .aidlc-engine > reviewer-dispatch.json
+
+---
+
+## Subagent Completed
+**Timestamp**: 2026-10-10T10:31:19Z
+**Event**: SUBAGENT_COMPLETED
+**Agent Type**: aidlc-architecture-reviewer-agent
+**Agent ID**: 01a12528-c857-7351-9fd2-4eae4f70b04a
+**Message**: **Reviewer:** aidlc-architecture-reviewer-agent\n\n**Verdict:** NOT-READY\n\n三項 Major 已重現並寫入指定 review：\n\n- R-01：已知 LINE 交付失敗後，同事件重送永久回500。\n- R-02：缺非必填 event ID 的合法事件完全不處理。\n- R-03：長回覆截斷遺失來源與未確認保存標示。\n\n`check
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:32:46Z
+**Event**: SENSOR_FIRED
+**Fire id**: 4c8b2731
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/line-adapter.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:32:46Z
+**Event**: SENSOR_PASSED
+**Fire id**: 4c8b2731
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/line-adapter.js
+**Duration ms**: 49
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:32:46Z
+**Event**: SENSOR_FIRED
+**Fire id**: 78bfd4eb
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/line-messages.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:32:46Z
+**Event**: SENSOR_PASSED
+**Fire id**: 78bfd4eb
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/line-messages.js
+**Duration ms**: 46
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:33:07Z
+**Event**: SENSOR_FIRED
+**Fire id**: b0df4873
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/line-adapter.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:33:07Z
+**Event**: SENSOR_PASSED
+**Fire id**: b0df4873
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/line-adapter.js
+**Duration ms**: 45
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:33:41Z
+**Event**: SENSOR_FIRED
+**Fire id**: 13508d1d
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/line.test.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:33:41Z
+**Event**: SENSOR_PASSED
+**Fire id**: 13508d1d
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/test/u1-zona-crystal-bot/line.test.js
+**Duration ms**: 48
+**Note**: tool-unavailable
+
+---
+
+## Sensor Fired
+**Timestamp**: 2026-10-10T10:34:35Z
+**Event**: SENSOR_FIRED
+**Fire id**: 6b9a84c0
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/line-messages.js
+
+---
+
+## Sensor Passed
+**Timestamp**: 2026-10-10T10:34:35Z
+**Event**: SENSOR_PASSED
+**Fire id**: 6b9a84c0
+**Sensor ID**: linter
+**Stage slug**: code-generation
+**Output path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo/src/bot-experience/line-messages.js
+**Duration ms**: 103
+**Note**: tool-unavailable
+
+---
+
+## Subagent Completed
+**Timestamp**: 2026-10-10T10:36:28Z
+**Event**: SUBAGENT_COMPLETED
+**Agent Type**: aidlc-developer-agent
+**Agent ID**: 01a12534-fe9e-7cb0-a643-876558bd9508
+**Message**: R-01／R-02／R-03 已修復並凍結。\n\n- 全檢 exit0：64 測試通過，格式與 lint 通過。\n- API、evidence、code-summary 已同步；manifest 仍 53 檔、traceability 仍 100 ID。\n- 8080 已重啟為 session 37910，展示記憶完整保留。\n- 未 commit 或執行生命週期操作，待獨立審查。
+
+---
+
+## Artifact Created
+**Timestamp**: 2026-10-10T10:36:37Z
+**Event**: ARTIFACT_CREATED
+**Tool**: Write
+**File**: <project-dir>/aidlc/spaces/default/intents/261010-zona-crystal-mvp/.aidlc-engine/reviewer-dispatch.json
+**Context**: .aidlc-engine > reviewer-dispatch.json
+
+---
+
+## Subagent Completed
+**Timestamp**: 2026-10-10T10:39:42Z
+**Event**: SUBAGENT_COMPLETED
+**Agent Type**: aidlc-architecture-reviewer-agent
+**Agent ID**: 01a12528-c857-7351-9fd2-4eae4f70b04a
+**Message**: **Reviewer:** aidlc-architecture-reviewer-agent\n\n**Verdict:** READY\n\n依固定門檻：零 Critical、一項未解 Major。\n\n- R-01：Unresolved；批次逾時後未開始的事件仍永久回500。\n- R-02、R-03：Resolved。\n- `check:u1` 64/64 通過；重送不重複已完成副作用，未知交付防重保
+
+---
+
+## Error Logged
+**Timestamp**: 2026-10-10T10:40:10Z
+**Event**: ERROR_LOGGED
+**Tool**: aidlc-bolt
+**Command**: aidlc-bolt engine bolt complete --name zona-crystal-full-demo --slug zona-crystal-full-demo --merge
+**Error**: Missing --batch <batch-number>
+
+---
+
+## Bolt Completed
+**Timestamp**: 2026-10-10T10:40:21Z
+**Event**: BOLT_COMPLETED
+**Bolt names**: zona-crystal-full-demo
+**Batch number**: 1
+**Bolt slug**: zona-crystal-full-demo
+
+---
+
+## State Merged
+**Timestamp**: 2026-10-10T10:40:21Z
+**Event**: STATE_MERGED
+**Bolt slug**: zona-crystal-full-demo
+**Worktree path**: .aidlc/worktrees/bolt-c15a7fe4_zona-crystal-full-demo
+**Source state hash**: d949642d071fadb31e75b45cb19edf004a0587758aa4d04ebc084d1740883484
+**Target state hash**: 5aa5a388af55f425aaa3459cc0eaf29553ddb1af1b0f76c9815fb9325be3de68
+**Conflict resolution**: clean
+
+---
+
+## Bolt Failed
+**Timestamp**: 2026-10-10T10:40:21Z
+**Event**: BOLT_FAILED
+**Failed Bolt**: zona-crystal-full-demo
+**Bolt slug**: zona-crystal-full-demo
+**Error summary**: audit-merge-failed: {"error":"refusing malformed or unauthorized worktree audit delta: worktree audit delta contains protected authority event UNIT_COMPLETED"}\n
+
+---
+
+## Guardrail Loaded
+**Timestamp**: 2026-10-10T10:41:40Z
+**Event**: GUARDRAIL_LOADED
+**Scope**: all
+**Path**: .codex/aidlc-rules/
+**Rule count**: 7
+
+---
+
+## Health Check
+**Timestamp**: 2026-10-10T10:41:40Z
+**Event**: HEALTH_CHECKED
+**Request**: /aidlc --doctor
+**Details**: 58 passed, 3 failed
+
+---
