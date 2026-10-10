@@ -1,0 +1,110 @@
+{
+
+  "stage": "domain-design",
+  "upstream_ids": [
+    "US1.1",
+    "US1.2",
+    "US2.1",
+    "US2.2",
+    "US3.1",
+    "US3.2",
+    "US4.1",
+    "US4.2",
+    "US5.1",
+    "US6.1",
+    "US6.2",
+    "US7.1",
+    "US8.1",
+    "US8.2",
+    "US9.1",
+    "US10.1",
+    "US10.2"
+  ],
+  "coverage": [
+    {
+      "id": "US1.1",
+      "status": "OK",
+      "target": "BotExperience"
+    },
+    {
+      "id": "US1.2",
+      "status": "OK",
+      "target": "BotExperience"
+    },
+    {
+      "id": "US2.1",
+      "status": "OK",
+      "target": "Consultation"
+    },
+    {
+      "id": "US2.2",
+      "status": "OK",
+      "target": "Consultation"
+    },
+    {
+      "id": "US3.1",
+      "status": "OK",
+      "target": "ConversationMemory"
+    },
+    {
+      "id": "US3.2",
+      "status": "OK",
+      "target": "ConversationMemory"
+    },
+    {
+      "id": "US4.1",
+      "status": "OK",
+      "target": "Consultation"
+    },
+    {
+      "id": "US4.2",
+      "status": "OK",
+      "target": "BotExperience"
+    },
+    {
+      "id": "US5.1",
+      "status": "OK",
+      "target": "DeityProfile"
+    },
+    {
+      "id": "US6.1",
+      "status": "OK",
+      "target": "BotExperience"
+    },
+    {
+      "id": "US6.2",
+      "status": "OK",
+      "target": "Guide"
+    },
+    {
+      "id": "US7.1",
+      "status": "OK",
+      "target": "BotExperience"
+    },
+    {
+      "id": "US8.1",
+      "status": "OK",
+      "target": "CrystalKnowledge"
+    },
+    {
+      "id": "US8.2",
+      "status": "OK",
+      "target": "CrystalKnowledge"
+    },
+    {
+      "id": "US9.1",
+      "status": "OK",
+      "target": "Crystal"
+    },
+    {
+      "id": "US10.1",
+      "status": "OK",
+      "target": "BotExperience"
+    },
+    {
+      "id": "US10.2",
+      "status": "OK",
+      "target": "BotExperience"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "stage": "infrastructure-design",
+  "unit": "u1-zona-crystal-bot",
+  "upstream_ids": [
+    "NFR1.1",
+    "NFR1.2",
+    "NFR1.3",
+    "NFR1.4",
+    "NFR1.5",
+    "NFR1.6",
+    "NFR1.7",
+    "NFR2.1",
+    "NFR2.2",
+    "NFR2.3",
+    "NFR2.4",
+    "NFR2.5",
+    "NFR2.6",
+    "NFR2.7",
+    "NFR2.8",
+    "NFR2.9",
+    "NFR3.1",
+    "NFR4.1",
+    "NFR4.2",
+    "NFR5.1",
+    "NFR5.2",
+    "NFR5.3",
+    "NFR5.4",
+    "NFR5.5",
+    "NFR5.6"
+  ],
+  "coverage": [
+    {
+      "id": "NFR1.1",
+      "status": "OK",
+      "target": "infrastructure-specification.md > INF-02（raw webhook ingress）"
+    },
+    {
+      "id": "NFR1.2",
+      "status": "N/A",
+      "target": "可信身分與欄位驗證是SEC-02應用機制，無新增基礎資源。"
+    },
+    {
+      "id": "NFR1.3",
+      "status": "OK",
+      "target": "infrastructure-specification.md > INF-02, INF-03, INF-07"
+    },
+    {
+      "id": "NFR1.4",
+      "status": "OK",
+      "target": "infrastructure-specification.md > INF-04, INF-07; monitoring-design.md > MON-05"
+    },
+    {
+      "id": "NFR1.5",
+      "status": "OK",
+      "target": "infrastructure-specification.md > INF-06"
+    },
+    {
+      "id": "NFR1.6",
+      "status": "OK",
+      "target": "infrastructure-specification.md > INF-03"
+    },
+    {
+      "id": "NFR1.7",
+      "status": "OK",
+      "target": "infrastructure-specification.md > Infrastructure Services / Existing Firestore、Existing LINE / Google APIs"
+    },
+    {
+      "id": "NFR2.1",
+      "status": "OK",
+      "target": "infrastructure-specification.md > INF-06"
+    },
+    {
+      "id": "NFR2.2",
+      "status": "N/A",
+      "target": "35秒UI finally/abort是PERF-02應用機制，無新增基礎資源。"
+    },
+    {
+      "id": "NFR2.3",
+      "status": "OK",
+      "target": "monitoring-design.md > MON-01"
+    },
+    {
+      "id": "NFR2.4",
+      "status": "N/A",
+      "target": "每人queue及remaining是SCALE-03應用機制，非佇列服務。"
+    },
+    {
+      "id": "NFR2.5",
+      "status": "OK",
+      "target": "infrastructure-specification.md > INF-03"
+    },
+    {
+      "id": "NFR2.6",
+      "status": "N/A",
+      "target": "pending-write latch是REL-02單程序應用機制，無分散式鎖資源。"
+    },
+    {
+      "id": "NFR2.7",
+      "status": "N/A",
+      "target": "timeout/abort及追問fallback是REL-03 SDK/應用機制，無新infra。"
+    },
+    {
+      "id": "NFR2.8",
+      "status": "N/A",
+      "target": "eventId防重是REL-04程序Map，無持久exactly-once平台。"
+    },
+    {
+      "id": "NFR2.9",
+      "status": "N/A",
+      "target": "身份generation是REL-05 UI/應用機制，無基礎資源。"
+    },
+    {
+      "id": "NFR3.1",
+      "status": "OK",
+      "target": "cicd-pipeline.md > PIPE-03, PIPE-04, PIPE-05"
+    },
+    {
+      "id": "NFR4.1",
+      "status": "N/A",
+      "target": "原生可操作UI為OBS-05應用設計，375/1280由PIPE-04/07驗收，無新infra。"
+    },
+    {
+      "id": "NFR4.2",
+      "status": "OK",
+      "target": "monitoring-design.md > MON-03"
+    },
+    {
+      "id": "NFR5.1",
+      "status": "OK",
+      "target": "infrastructure-specification.md > INF-01, INF-04"
+    },
+    {
+      "id": "NFR5.2",
+      "status": "OK",
+      "target": "cicd-pipeline.md > PIPE-04（五個並行隔離檢查）"
+    },
+    {
+      "id": "NFR5.3",
+      "status": "OK",
+      "target": "monitoring-design.md > MON-03"
+    },
+    {
+      "id": "NFR5.4",
+      "status": "OK",
+      "target": "monitoring-design.md > MON-01, MON-05"
+    },
+    {
+      "id": "NFR5.5",
+      "status": "OK",
+      "target": "monitoring-design.md > MON-02"
+    },
+    {
+      "id": "NFR5.6",
+      "status": "OK",
+      "target": "monitoring-design.md > MON-04; cicd-pipeline.md > PIPE-07, PIPE-08"
+    }
+  ]
+}
