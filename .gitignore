@@ -83,3 +83,9 @@ aidlc/diagnostics/
 # which was proven to corrupt the multi-line audit blocks) ·
 # aidlc/spaces/*/intents/*/<phase>/<stage>/*.md (artifacts + diary).
 # END AI-DLC:gitignore
+
+# Zona Crystal private application data
+.zona-data/
+.env
+.env.*
+!.env.example

@@ -1,0 +1,17 @@
+{
+  "appName": "CrystalAstrology",
+  "userId": "fake-line-A",
+  "sessionId": "session_fake-line-A",
+  "events": [
+    {
+      "author": "user",
+      "timestamp": 123,
+      "content": { "parts": [{ "text": "收藏紫水晶" }] }
+    },
+    {
+      "author": "model",
+      "timestamp": 124,
+      "content": { "parts": [{ "text": "舊答案" }] }
+    }
+  ]
+}

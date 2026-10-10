@@ -1,0 +1,166 @@
+{
+  "stage": "code-generation",
+  "unit": "u1-zona-crystal-bot",
+  "version": 1,
+  "writes": [
+    {
+      "path": ".env.example"
+    },
+    {
+      "path": ".github/workflows/zona-crystal-check.yml"
+    },
+    {
+      "path": ".gitignore"
+    },
+    {
+      "path": ".prettierrc.json"
+    },
+    {
+      "path": "README.md"
+    },
+    {
+      "path": "docs/zona-crystal-api.md"
+    },
+    {
+      "path": "docs/zona-crystal-demo.md"
+    },
+    {
+      "path": "docs/zona-crystal-evidence.md"
+    },
+    {
+      "path": "eslint.config.js"
+    },
+    {
+      "path": "package-lock.json"
+    },
+    {
+      "path": "package.json"
+    },
+    {
+      "path": "public/app.js"
+    },
+    {
+      "path": "public/assets/richmenu_resized.jpg"
+    },
+    {
+      "path": "public/assets/五宮格_resized.jpg"
+    },
+    {
+      "path": "public/assets/維納斯.png"
+    },
+    {
+      "path": "public/assets/莫伊來.png"
+    },
+    {
+      "path": "public/assets/雅典娜.png"
+    },
+    {
+      "path": "public/index.html"
+    },
+    {
+      "path": "public/styles.css"
+    },
+    {
+      "path": "public/ui.js"
+    },
+    {
+      "path": "scripts/u1-zona-crystal-bot/check.mjs"
+    },
+    {
+      "path": "scripts/u1-zona-crystal-bot/test-files.mjs"
+    },
+    {
+      "path": "src/bot-experience/deadline.js"
+    },
+    {
+      "path": "src/bot-experience/experience.js"
+    },
+    {
+      "path": "src/bot-experience/http.js"
+    },
+    {
+      "path": "src/bot-experience/line-adapter.js"
+    },
+    {
+      "path": "src/bot-experience/line-messages.js"
+    },
+    {
+      "path": "src/bot-experience/logger.js"
+    },
+    {
+      "path": "src/bot-experience/validation.js"
+    },
+    {
+      "path": "src/config.js"
+    },
+    {
+      "path": "src/consultation/consultation.js"
+    },
+    {
+      "path": "src/consultation/model-adapter.js"
+    },
+    {
+      "path": "src/consultation/profiles.js"
+    },
+    {
+      "path": "src/conversation-memory/firestore-store.js"
+    },
+    {
+      "path": "src/conversation-memory/legacy-projection.js"
+    },
+    {
+      "path": "src/conversation-memory/local-store.js"
+    },
+    {
+      "path": "src/conversation-memory/memory.js"
+    },
+    {
+      "path": "src/conversation-memory/schema.js"
+    },
+    {
+      "path": "src/crystal-knowledge/content.js"
+    },
+    {
+      "path": "src/crystal-knowledge/knowledge.js"
+    },
+    {
+      "path": "src/server.js"
+    },
+    {
+      "path": "test/u1-zona-crystal-bot/consultation.test.js"
+    },
+    {
+      "path": "test/u1-zona-crystal-bot/delivery.test.js"
+    },
+    {
+      "path": "test/u1-zona-crystal-bot/experience.test.js"
+    },
+    {
+      "path": "test/u1-zona-crystal-bot/fixtures.js"
+    },
+    {
+      "path": "test/u1-zona-crystal-bot/fixtures/legacy-memory.json"
+    },
+    {
+      "path": "test/u1-zona-crystal-bot/fixtures/valid-image.png"
+    },
+    {
+      "path": "test/u1-zona-crystal-bot/http.test.js"
+    },
+    {
+      "path": "test/u1-zona-crystal-bot/knowledge.test.js"
+    },
+    {
+      "path": "test/u1-zona-crystal-bot/line.test.js"
+    },
+    {
+      "path": "test/u1-zona-crystal-bot/memory.test.js"
+    },
+    {
+      "path": "test/u1-zona-crystal-bot/schema.test.js"
+    },
+    {
+      "path": "test/u1-zona-crystal-bot/ui.test.js"
+    }
+  ]
+}

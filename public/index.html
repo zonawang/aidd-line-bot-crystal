@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Zona Crystal 水晶教學</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Zona Crystal</h1>
+      <p>水晶與生命靈數的教學探索</p>
+      <p>本機教學入口 · LINE 操作模擬</p>
+      <label for="identity">目前身分</label
+      ><select id="identity" data-testid="mode-identity-select">
+        <option>A</option>
+        <option>B</option>
+      </select>
+      <p id="mode"></p>
+      <p>從生日開始，也可以直接詢問水晶；A 與 B 的記憶分開保存。</p>
+    </header>
+    <main>
+      <section>
+        <h2>生日與生命靈數</h2>
+        <form id="birthday-form">
+          <label for="birthday">選擇生日</label
+          ><input
+            id="birthday"
+            type="date"
+            data-testid="birthday-input-date"
+          /><label for="birthday-text">或輸入完整生日</label
+          ><input
+            id="birthday-text"
+            placeholder="2000-01-01"
+            data-testid="birthday-input-text"
+          /><button data-testid="birthday-input-submit">
+            查看生命靈數與三卡
+          </button>
+        </form>
+        <button data-action="recommend" data-testid="recommend-independent">
+          獨立取得今日三卡
+        </button>
+      </section>
+      <section>
+        <h2>推薦水晶</h2>
+        <div id="cards" class="cards"></div>
+      </section>
+      <section>
+        <h2>文字與圖片諮詢</h2>
+        <form id="text-form">
+          <label for="message">您的問題或 Echo 文字</label
+          ><textarea
+            id="message"
+            rows="3"
+            maxlength="4000"
+            required
+            data-testid="consult-text-input"
+          ></textarea
+          ><button data-testid="consult-text-submit">送出文字</button>
+        </form>
+        <form id="image-form">
+          <label for="image">上傳 JPEG、PNG 或 WebP（最多 5 MiB）</label
+          ><input
+            id="image"
+            type="file"
+            accept="image/jpeg,image/png,image/webp"
+            required
+            data-testid="consult-image-input"
+          /><button data-testid="consult-image-submit">送出圖片</button>
+        </form>
+        <div>
+          <button
+            data-action="set-mode"
+            data-mode="echo"
+            data-testid="echo-enter"
+          >
+            進入回聲模式</button
+          ><button
+            data-action="set-mode"
+            data-mode="consult"
+            data-testid="echo-exit"
+          >
+            退出回聲模式</button
+          ><button data-action="recall" data-testid="memory-recall">
+            回憶先前內容
+          </button>
+        </div>
+      </section>
+      <section>
+        <h2>四角色教學輸入</h2>
+        <p>以下固定教學輸入使用原有角色規則；真實模式結果需另行驗證。</p>
+        <div id="role-examples"></div>
+      </section>
+      <section>
+        <h2>回覆與探索</h2>
+        <div id="reply"></div>
+        <div id="questions"></div>
+        <div id="shortcuts"></div>
+      </section>
+      <section>
+        <h2>主選單與五宮格</h2>
+        <p>LINE 操作模擬；圖片載入失敗時，同名文字按鈕仍可用。</p>
+        <p id="menu-label"></p>
+        <img id="menu-image" class="menu-image" alt="主選單預覽" />
+        <div>
+          <button
+            data-action="set-menu"
+            data-menu="five"
+            data-testid="menu-five"
+          >
+            切至五宮格</button
+          ><button
+            data-action="set-menu"
+            data-menu="main"
+            data-testid="menu-main"
+          >
+            回到主選單</button
+          ><a
+            href="https://github.com/zonawang/zona-ai-learning-lab"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid="menu-share"
+            >原分享入口</a
+          >
+        </div>
+        <div id="guides"></div>
+      </section>
+      <aside>
+        <h2>操作狀態</h2>
+        <p id="status" role="status" aria-live="polite"></p>
+        <p id="memory"></p>
+        <p>
+          內容為教學情境，不宣稱療效或命運驗證。範例回覆、圖片辨識範例與替代問題會在結果附近標示。
+        </p>
+      </aside>
+    </main>
+  </body>
+</html>

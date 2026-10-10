@@ -37,28 +37,28 @@ deadline 2026-10-10T14:40:00Z（臺北22:40）。初始核准後目標：60分�
 
 下列 Step 是核准後 PART2 的執行順序；每層實作後立即撰寫／執行該層測試，通過再接下一層。後續功能增量同樣遵守此順序，不以最後一批測試取代逐層測試。
 
-- [ ] Step 1 — conductor 完成安全 Git baseline／合法 Bolt 邊界後，建立 package/config/server 骨架、私有資料排除與 lazy SDK 初始化；不把 secrets帶入版本。US1.1、US10.2。
-- [ ] Step 2 — 建立 node:test runner與 check.mjs exact-file清單、ESLint／Prettier設定、fixtures helper；不建立永遠通過的placeholder test。runner就緒先於第一個實際 test。US10.2。
-- [ ] Step 3 — 實作 schema／初始化／必要欄位白名單、可信身分digest、狀態與 turns 關聯。US3.1、US3.2。
-- [ ] Step 4 — 寫／跑 schema.test.js：正常聚合、跨人／非法狀態與原圖／secret排除。US3.1、US3.2。
-- [ ] Step 5 — 實作 local-store／memory 每人序列、read-before-write、tmp+rename、pendingWrites latch、deadline；保存未知原promise真正settled才解鎖，期限到不啟新副作用。US3.1、US3.2、US7.1。
-- [ ] Step 6 — 寫／跑 memory.test.js：真檔新instance／子程序重讀、A/B、空／壞／讀／寫失敗、晚成功／晚拒絕／永不settled、五並行與慢A不堵B。US3.1、US3.2、US7.1。
-- [ ] Step 7 — 實作 knowledge/content 原日期形式、公曆、1–9縮減、七池均勻不放回三卡與當前卡介紹；先完成薄旅程資料。US8.1、US8.2、US9.1。
-- [ ] Step 8 — 寫／跑 knowledge.test.js：各日期形式／嵌入／閏日／邊界／修正，4/2/4/6，三卡不同與每卡介紹，未知卡、無生日獨立推薦；後续指南增量也先實作再加本檔測試。US8.1、US8.2、US9.1、US6.2。
-- [ ] Step 9 — 實作 experience 薄旅程業務協調、有效生日保存、逐卡介紹＋相關明示三題、狀態／memoryStatus投影；不靠模型完成確定性介紹。US8.1、US8.2、US9.1、US4.1、US3.1。
-- [ ] Step 10 — 寫／跑 experience.test.js 薄旅程、逐卡、讀失敗禁止猜卡、保存失敗答案可讀與狀態不冒成功。US8.1、US8.2、US9.1、US3.1。
-- [ ] Step 11 — 實作 demo HTTP／health、安全static allowlist、loopback Host/Origin與JSON限制、C1契約驗證。US1.1、US10.1。
-- [ ] Step 12 — 寫／跑 http.test.js：實際HTTP薄旅程、非法action／extra field、路徑／symlink／私有檔拒絕、health僅alive，兩模式demo404。US1.1、US10.1。
-- [ ] Step 13 — 實作原生最薄頁面生日→三卡→選卡，穩定data-testid、文字安全呈現與memory notice；先取得可運行本機旅程。US8.1、US8.2、US9.1、US10.1。
-- [ ] Step 14 — 寫／跑 ui.test.js 薄頁互動；以實際瀏覽器操作補375/1280與鍵盤證據，工具不可用標未驗證。US8.1、US8.2、US9.1、US10.1。
-- [ ] Step 15 — 擴充 Consultation及業務層：完整example/real文字圖片、實際bytes/MIME、四角色與COSMOS、三追問／相關替代、life-path完整原問題、Echo退出優先、六指南、雙選單、recall；每個增量實作後寫／跑 consultation.test.js、experience.test.js、knowledge.test.js，逐題／逐角色／逐指南驗內容。US1.2、US2.1、US2.2、US4.1、US4.2、US5.1、US6.1、US6.2、US7.1。
-- [ ] Step 16 — 擴充 repository Firestore8／legacy唯讀投影、scope二次驗證、sourceRef去重與有效時間排序、新session聚合保存；實作後擴寫／跑 memory.test.js，不連live寫原資料。US3.1、US3.2。
-- [ ] Step 17 — 擴充LINE API層：raw驗簽、可信event、日期／選卡／switch、bounded image stream、reply Flex/sender/Quick Reply與動畫，事件防重／批次共30s／未知交付、不自動retry；實作後寫／跑 line.test.js及擴充http.test.js，無效簽章spy零副作用。US1.1、US2.2、US4.2、US5.1、US6.1、US7.1。
-- [ ] Step 18 — 擴充完整frontend：文字／圖片、三題完整送出、雙選單／六指南／分享、Echo、A/B清視圖＋generation忽略晚到、35s finally；在途身份選擇可用依後續Functional/NFR明定，取代早期mockup busy禁切細節。實作後擴寫／跑ui.test.js、http.test.js，實際瀏覽器逐功能檢查。US1.2、US2.1、US2.2、US3.2、US4.1、US4.2、US5.1、US6.1、US6.2、US7.1、US10.1。
-- [ ] Step 19 — 補完整env/lock、公開模式邊界、CSP與安全logger；實作後跑HTTP／LINE／delivery測試的secret sentinel、錯誤白名單及輸入大小case。簡單npm audit記結果，不降低安全門檻。US10.1、US10.2。
-- [ ] Step 20 — 完成README/API/demo/evidence與最小GitHub Actions，重用exact unit check命令；寫／跑delivery.test.js（實際server啟動／health／restart、暖機10次每次≤2s），本機與CI相同關鍵命令，失敗阻擋合併。US10.2、US3.1、US3.2。
-- [ ] Step 21 — 完整52AC／25NFR／23BR檢查與四元件正常路徑；全單位exact check，實際375/1280、鍵盤、A/B重啟與全功能demo。外部憑證可用時獨立記真模型／Firestore／LINE／手機，不執行live rich-menu setup；未測明列限制。全部17故事。
-- [ ] Step 22 — 產出code-summary、strict-schema source-manifest（含每個shell/generator寫入路徑）及traceability，OK只指存在的workspace檔，列所有AC/NFR/BR與未驗證證據；conductor接續後續review／verification command人工作答／checkpoint／Operation，本次不report complete。US10.2。
+- [x] Step 1 — conductor 完成安全 Git baseline／合法 Bolt 邊界後，建立 package/config/server 骨架、私有資料排除與 lazy SDK 初始化；不把 secrets帶入版本。US1.1、US10.2。
+- [x] Step 2 — 建立 node:test runner與 check.mjs exact-file清單、ESLint／Prettier設定、fixtures helper；不建立永遠通過的placeholder test。runner就緒先於第一個實際 test。US10.2。
+- [x] Step 3 — 實作 schema／初始化／必要欄位白名單、可信身分digest、狀態與 turns 關聯。US3.1、US3.2。
+- [x] Step 4 — 寫／跑 schema.test.js：正常聚合、跨人／非法狀態與原圖／secret排除。US3.1、US3.2。
+- [x] Step 5 — 實作 local-store／memory 每人序列、read-before-write、tmp+rename、pendingWrites latch、deadline；保存未知原promise真正settled才解鎖，期限到不啟新副作用。US3.1、US3.2、US7.1。
+- [x] Step 6 — 寫／跑 memory.test.js：真檔新instance／子程序重讀、A/B、空／壞／讀／寫失敗、晚成功／晚拒絕／永不settled、五並行與慢A不堵B。US3.1、US3.2、US7.1。
+- [x] Step 7 — 實作 knowledge/content 原日期形式、公曆、1–9縮減、七池均勻不放回三卡與當前卡介紹；先完成薄旅程資料。US8.1、US8.2、US9.1。
+- [x] Step 8 — 寫／跑 knowledge.test.js：各日期形式／嵌入／閏日／邊界／修正，4/2/4/6，三卡不同與每卡介紹，未知卡、無生日獨立推薦；後续指南增量也先實作再加本檔測試。US8.1、US8.2、US9.1、US6.2。
+- [x] Step 9 — 實作 experience 薄旅程業務協調、有效生日保存、逐卡介紹＋相關明示三題、狀態／memoryStatus投影；不靠模型完成確定性介紹。US8.1、US8.2、US9.1、US4.1、US3.1。
+- [x] Step 10 — 寫／跑 experience.test.js 薄旅程、逐卡、讀失敗禁止猜卡、保存失敗答案可讀與狀態不冒成功。US8.1、US8.2、US9.1、US3.1。
+- [x] Step 11 — 實作 demo HTTP／health、安全static allowlist、loopback Host/Origin與JSON限制、C1契約驗證。US1.1、US10.1。
+- [x] Step 12 — 寫／跑 http.test.js：實際HTTP薄旅程、非法action／extra field、路徑／symlink／私有檔拒絕、health僅alive，兩模式demo404。US1.1、US10.1。
+- [x] Step 13 — 實作原生最薄頁面生日→三卡→選卡，穩定data-testid、文字安全呈現與memory notice；先取得可運行本機旅程。US8.1、US8.2、US9.1、US10.1。
+- [x] Step 14 — 寫／跑 ui.test.js 薄頁互動；以實際瀏覽器操作補375/1280與鍵盤證據，工具不可用標未驗證。US8.1、US8.2、US9.1、US10.1。
+- [x] Step 15 — 擴充 Consultation及業務層：完整example/real文字圖片、實際bytes/MIME、四角色與COSMOS、三追問／相關替代、life-path完整原問題、Echo退出優先、六指南、雙選單、recall；每個增量實作後寫／跑 consultation.test.js、experience.test.js、knowledge.test.js，逐題／逐角色／逐指南驗內容。US1.2、US2.1、US2.2、US4.1、US4.2、US5.1、US6.1、US6.2、US7.1。
+- [x] Step 16 — 擴充 repository Firestore8／legacy唯讀投影、scope二次驗證、sourceRef去重與有效時間排序、新session聚合保存；實作後擴寫／跑 memory.test.js，不連live寫原資料。US3.1、US3.2。
+- [x] Step 17 — 擴充LINE API層：raw驗簽、可信event、日期／選卡／switch、bounded image stream、reply Flex/sender/Quick Reply與動畫，事件防重／批次共30s／未知交付、不自動retry；實作後寫／跑 line.test.js及擴充http.test.js，無效簽章spy零副作用。US1.1、US2.2、US4.2、US5.1、US6.1、US7.1。
+- [x] Step 18 — 擴充完整frontend：文字／圖片、三題完整送出、雙選單／六指南／分享、Echo、A/B清視圖＋generation忽略晚到、35s finally；在途身份選擇可用依後續Functional/NFR明定，取代早期mockup busy禁切細節。實作後擴寫／跑ui.test.js、http.test.js，實際瀏覽器逐功能檢查。US1.2、US2.1、US2.2、US3.2、US4.1、US4.2、US5.1、US6.1、US6.2、US7.1、US10.1。
+- [x] Step 19 — 補完整env/lock、公開模式邊界、CSP與安全logger；實作後跑HTTP／LINE／delivery測試的secret sentinel、錯誤白名單及輸入大小case。簡單npm audit記結果，不降低安全門檻。US10.1、US10.2。
+- [x] Step 20 — 完成README/API/demo/evidence與最小GitHub Actions，重用exact unit check命令；寫／跑delivery.test.js（實際server啟動／health／restart、暖機10次每次≤2s），本機與CI相同關鍵命令，失敗阻擋合併。US10.2、US3.1、US3.2。
+- [x] Step 21 — 完整52AC／25NFR／23BR檢查與四元件正常路徑；全單位exact check，實際375/1280、鍵盤、A/B重啟與全功能demo。外部憑證可用時獨立記真模型／Firestore／LINE／手機，不執行live rich-menu setup；未測明列限制。全部17故事。
+- [x] Step 22 — 產出code-summary、strict-schema source-manifest（含每個shell/generator寫入路徑）及traceability，OK只指存在的workspace檔，列所有AC/NFR/BR與未驗證證據；conductor接續後續review／verification command人工作答／checkpoint／Operation，本次不report complete。US10.2。
 
 ## Story-to-Step & 52 AC Test Map
 
@@ -192,4 +192,3 @@ None. 無新增產品方向問題。執行依賴／risks：安全Git source bind
   "contract_sha256": "sha256:1d6256fca67658f5a55a77db7aa6b6f35510dea3fc15454971fd25e14f907e97"
 }
 ```
-
