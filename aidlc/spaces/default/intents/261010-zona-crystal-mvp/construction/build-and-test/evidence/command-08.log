@@ -1,0 +1,36 @@
+$ node --test test/u1-zona-crystal-bot/ui.test.js
+✔ AC10.1.2 NFR4.1 BR10.1 native labels, focus, alt and width rules (DOM/source evidence only) (33.025416ms)
+✔ AC9.1.2 AC9.1.3 AC4.1.2 NFR1.4 safe render and each card/question actual click (8.76275ms)
+{"requestId":"119e5d4d-1d9d-4eea-a42b-fdaed7e8e2e3","elapsedMs":2,"action":"text","memoryRead":"empty","memoryWrite":"saved"}
+{"requestId":"7e5ff62e-c192-451c-a231-a629e0d23b47","elapsedMs":2,"action":"text","memoryRead":"loaded","memoryWrite":"saved"}
+{"requestId":"f310d70c-98ed-411e-b1ac-ef8b8ff94acf","elapsedMs":2,"action":"text","memoryRead":"loaded","memoryWrite":"saved"}
+{"requestId":"fea68f5d-946b-4bf2-ad73-78fc5e4ef537","elapsedMs":1,"action":"text","memoryRead":"loaded","memoryWrite":"saved"}
+{"requestId":"af4cddd8-9070-4d01-a06f-ab7b5def3f7a","elapsedMs":1,"action":"set-mode","memoryRead":"loaded","memoryWrite":"saved"}
+{"requestId":"42a5ee46-07c9-4b18-b1fa-77f16de94e15","elapsedMs":0,"action":"text","memoryRead":"loaded","memoryWrite":"not-attempted"}
+{"requestId":"4fe774b4-b17c-4bed-ad04-8e589b248d8b","elapsedMs":0,"action":"image","memoryRead":"loaded","memoryWrite":"not-attempted"}
+{"requestId":"3c11d69b-d12a-4b7f-934b-e643f2705df8","elapsedMs":1,"action":"set-mode","memoryRead":"loaded","memoryWrite":"saved"}
+{"requestId":"e53275bb-5296-4806-baf7-889be1e5e011","elapsedMs":0,"action":"guide","memoryRead":"loaded","memoryWrite":"not-attempted"}
+{"requestId":"adb7ff13-219c-4e85-b0fc-72a4193015a2","elapsedMs":0,"action":"guide","memoryRead":"loaded","memoryWrite":"not-attempted"}
+{"requestId":"a8534f7d-51ee-4f17-9957-48a39545adbe","elapsedMs":0,"action":"guide","memoryRead":"loaded","memoryWrite":"not-attempted"}
+{"requestId":"b0e07663-5e55-4c4c-8e55-f857fa09119b","elapsedMs":0,"action":"guide","memoryRead":"loaded","memoryWrite":"not-attempted"}
+{"requestId":"d73e90e1-b839-457c-8c9c-39889fb41599","elapsedMs":0,"action":"guide","memoryRead":"loaded","memoryWrite":"not-attempted"}
+{"requestId":"970a2d46-7b24-4ec6-87e2-78a3635c0728","elapsedMs":0,"action":"guide","memoryRead":"loaded","memoryWrite":"not-attempted"}
+{"requestId":"e039a916-2aef-4160-bd17-8d3eefebda34","elapsedMs":1,"action":"set-menu","memoryRead":"loaded","memoryWrite":"saved"}
+{"requestId":"2a8aaf61-93a6-4e86-921e-fe4c9049af5a","elapsedMs":1,"action":"set-menu","memoryRead":"loaded","memoryWrite":"saved"}
+{"requestId":"6d97f7ca-13a0-4c11-b06d-ac9728f1173e","elapsedMs":1,"action":"birthday","memoryRead":"loaded","memoryWrite":"saved"}
+{"requestId":"26390d7e-9a0d-44fb-b7a9-4ef83100301f","elapsedMs":1,"action":"life-path","memoryRead":"loaded","memoryWrite":"saved"}
+{"requestId":"214d775b-39e4-44a5-b875-4f40f642dc2b","elapsedMs":1,"action":"image","memoryRead":"loaded","memoryWrite":"saved"}
+{"requestId":"f3a16d62-5cf4-49dd-aa45-bdc91be9cdeb","elapsedMs":0,"action":"recall","memoryRead":"loaded","memoryWrite":"not-attempted"}
+✔ AC1.2.1 AC1.2.2 AC1.2.3 AC2.1.3 AC2.2.2 AC4.2.2 AC5.1.1 AC6.1.1 AC6.2.1 AC6.2.2 AC6.2.3 AC10.1.1 all actual DOM controls through HTTP (135.937875ms)
+✔ AC7.1.1 AC7.1.2 NFR2.2 finite waiting even when fetch ignores abort, then recover without retry (24.00925ms)
+✔ AC3.2.1 NFR2.9 switching B ignores late A result (4.849125ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 560.444209
+
+EXIT_CODE=0

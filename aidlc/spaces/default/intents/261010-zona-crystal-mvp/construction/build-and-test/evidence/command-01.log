@@ -1,0 +1,14 @@
+$ node --test test/u1-zona-crystal-bot/schema.test.js
+✔ AC3.1.1 NFR1.6 BR3.1 necessary aggregate excludes image and secrets (1.112833ms)
+✔ AC3.2.3 NFR1.2 BR3.2 identity namespaces and invalid client identities (0.134875ms)
+✔ NFR2.5 BR3.3 reject malformed state and foreign turns (0.348458ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 71.80575
+
+EXIT_CODE=0

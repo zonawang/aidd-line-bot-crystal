@@ -1,0 +1,1 @@
+node scripts/u1-zona-crystal-bot/check.mjs

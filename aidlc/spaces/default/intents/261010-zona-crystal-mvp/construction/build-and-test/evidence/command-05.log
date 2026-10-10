@@ -1,0 +1,20 @@
+$ node --test test/u1-zona-crystal-bot/consultation.test.js
+✔ AC5.1.1 AC2.1.3 BR5.1 original example ATHENA (1.085166ms)
+✔ AC5.1.1 AC2.1.3 BR5.1 original example VENUS (0.08375ms)
+✔ AC5.1.1 AC2.1.3 BR5.1 original example FORTUNE (0.070958ms)
+✔ AC5.1.1 AC2.1.3 BR5.1 original example COSMOS (0.061334ms)
+✔ AC2.1.1 AC2.2.1 AC5.1.2 C4 Gemini actual text and full bytes/MIME via SDK mock (0.791833ms)
+✔ AC5.1.2 Vertex SDK path carries full image and user context (0.156625ms)
+✔ AC2.1.2 AC2.2.3 NFR2.7 real failure never becomes example; next request works (0.238583ms)
+✔ AC4.1.3 AC5.1.3 NFR4.2 unknown role and missing followups use marked related three (0.120416ms)
+✔ AC2.2.2 NFR4.2 BR2.2 example image always labeled (0.085666ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 60.920458
+
+EXIT_CODE=0

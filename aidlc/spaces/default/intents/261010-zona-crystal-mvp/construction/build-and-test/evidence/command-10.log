@@ -1,0 +1,108 @@
+$ node --test test/u1-zona-crystal-bot/schema.test.js test/u1-zona-crystal-bot/memory.test.js test/u1-zona-crystal-bot/knowledge.test.js test/u1-zona-crystal-bot/experience.test.js test/u1-zona-crystal-bot/consultation.test.js test/u1-zona-crystal-bot/line.test.js test/u1-zona-crystal-bot/http.test.js test/u1-zona-crystal-bot/ui.test.js test/u1-zona-crystal-bot/delivery.test.js
+✔ AC5.1.1 AC2.1.3 BR5.1 original example ATHENA (1.66175ms)
+✔ AC5.1.1 AC2.1.3 BR5.1 original example VENUS (0.1035ms)
+✔ AC5.1.1 AC2.1.3 BR5.1 original example FORTUNE (0.082333ms)
+✔ AC5.1.1 AC2.1.3 BR5.1 original example COSMOS (0.063125ms)
+✔ AC2.1.1 AC2.2.1 AC5.1.2 C4 Gemini actual text and full bytes/MIME via SDK mock (0.951917ms)
+✔ AC5.1.2 Vertex SDK path carries full image and user context (0.173792ms)
+✔ AC2.1.2 AC2.2.3 NFR2.7 real failure never becomes example; next request works (0.293ms)
+✔ AC4.1.3 AC5.1.3 NFR4.2 unknown role and missing followups use marked related three (0.140666ms)
+✔ AC2.2.2 NFR4.2 BR2.2 example image always labeled (0.078833ms)
+warm10ms=[4,5,4,5,3,2,1,2,2,4]
+✔ AC3.1.2 AC3.2.1 AC3.2.2 AC10.2.1 NFR2.3 NFR2.5 NFR5.1 actual spawn restart and ten warm actions <=2s (321.816416ms)
+✔ AC10.2.4 NFR1.4 NFR5.4 BR10.4 safe logging protects free-form allowed field values as well as unknown keys (0.246709ms)
+✔ AC10.2.2 AC10.2.3 NFR3.1 NFR5.6 same exact CI command and evidence separates external untested (2.432583ms)
+✔ patched transitive uuid v4 compatibility and all real SDK packages load (211.971166ms)
+✔ AC8.2.1 AC9.1.1 AC9.1.2 AC4.1.1 BR9.2 birthday then each card has matching introduction (34.441208ms)
+✔ NFR2.1 NFR2.7 late model result cannot save and next real request recovers (12.402708ms)
+✔ AC1.2.1 AC1.2.2 AC1.2.3 BR1.2 Echo raw text, image prompt, all exits and next consultation (27.256625ms)
+✔ AC4.1.2 AC4.2.2 BR4.2 life-path original full question and every follow-up executes (9.284083ms)
+✔ AC6.1.1 AC6.2.1 AC6.2.2 AC3.1.1 BR6.1 menus/guides and recall (8.304ms)
+✔ AC8.1.3 AC9.1.3 invalid date preserves last valid cards and recovery works (1.865542ms)
+✔ AC3.1.3 NFR5.3 BR3.3 save failure keeps readable answer and read failure cannot guess cards (0.2645ms)
+{"requestId":"d8e47ea4-36f0-464e-840d-720360537792","elapsedMs":3,"action":"birthday","memoryRead":"empty","memoryWrite":"saved"}
+✔ AC1.1.1 AC10.1.3 NFR5.5 real HTTP birthday journey, health and private paths (37.96ms)
+✔ NFR1.1 NFR1.3 NFR1.4 NFR1.5 real HTTP raw signature/8MiB limit, symlink and safe error (68.619875ms)
+{"requestId":"4638af43-25ba-4144-8cb7-257b2d01a3f6","action":"failed","errorCode":"UNSUPPORTED_IMAGE"}
+{"requestId":"bfa7e4e7-0663-4b6d-a2a0-17df9edcdb3e","action":"failed","errorCode":"UNSUPPORTED_IMAGE"}
+{"requestId":"786a784f-c88c-482b-bd29-080ab2710e67","action":"failed","errorCode":"UNSUPPORTED_IMAGE"}
+{"requestId":"2ff3e5d0-3b6c-4d38-82f6-72b012ada921","elapsedMs":2,"action":"text","memoryRead":"empty","memoryWrite":"saved"}
+✔ AC2.2.3 local image malformed base64/MIME and real configuration shortage recover (8.172875ms)
+{"requestId":"ad663421-c89d-414e-998a-c18da399580c","action":"failed","errorCode":"INVALID_INPUT"}
+{"requestId":"00c2b6f4-f30c-4580-81e5-0abb4655eb5f","action":"failed","errorCode":"INVALID_INPUT"}
+{"requestId":"4e1c74b2-19e4-48e1-8fd7-f2448c35316c","action":"failed","errorCode":"INVALID_INPUT"}
+{"requestId":"cc315f06-a14e-4770-a092-950851bd327a","action":"failed","errorCode":"INVALID_BIRTHDAY"}
+{"requestId":"a5bfc1f2-6047-4415-9e0c-d8dededcc509","action":"failed","errorCode":"PAYLOAD_TOO_LARGE"}
+{"requestId":"065901bc-4121-4427-a058-bef1c18b959b","action":"failed","errorCode":"INVALID_INPUT"}
+{"requestId":"a5a3f111-0701-4865-828a-654f36d5b24f","action":"failed","errorCode":"INVALID_INPUT"}
+✔ NFR1.2 NFR1.3 NFR1.5 HTTP injection, host/origin and format rejected (12.365417ms)
+✔ AC8.1.1 BR8.1 2000-01-01 (0.606709ms)
+✔ AC8.1.1 BR8.1 2000/01/01 (0.080458ms)
+✔ AC8.1.1 BR8.1 2000年1月1日 (0.103459ms)
+✔ AC8.1.1 BR8.1 2000 01 01 (0.039708ms)
+✔ AC8.1.1 BR8.1 20000101 (0.161583ms)
+✔ AC8.1.1 BR8.1 老師，我的生日是2000年1月1日 (0.944958ms)
+✔ AC8.1.2 AC8.1.3 AC4.2.3 BR8.1 valid leap, invalid date, ambiguous and recovery (0.936417ms)
+✔ AC8.2.1 AC8.2.2 BR8.2 2000-01-01 (0.167833ms)
+✔ AC8.2.1 AC8.2.2 BR8.2 2000-01-08 (0.123875ms)
+✔ AC8.2.1 AC8.2.2 BR8.2 2000-09-29 (0.240875ms)
+✔ AC8.2.1 AC8.2.2 BR8.2 1999-11-12 (0.10225ms)
+✔ AC8.2.3 invalid birthday never calculates (0.217375ms)
+✔ AC9.1.1 AC9.1.2 AC9.1.3 BR9.1 BR9.2 all cards distinct and every selection matches (0.640375ms)
+✔ AC6.2.1 AC6.2.2 BR6.2 six original guide aliases retain usable text (0.221875ms)
+✔ AC1.1.1 AC1.1.2 AC1.1.3 NFR1.1 BR1.1 signature before all side effects, missing config and empty events (1.735708ms)
+✔ AC3.2.2 NFR1.2 trusted source, date/card/switch and unsupported events (0.174792ms)
+✔ AC2.2.1 AC2.2.2 AC2.2.3 NFR1.5 bounded streamed image actual bytes and malformed/oversize (2.720958ms)
+✔ AC4.1.1 AC4.1.3 AC4.2.1 AC4.2.2 AC4.2.3 AC5.1.1 AC5.1.2 AC5.1.3 Flex current IDs, full questions, original role and date/life path actions (0.941042ms)
+✔ AC6.1.1 AC6.1.2 AC6.1.3 AC7.1.1 AC7.1.2 AC7.1.3 NFR1.7 NFR2.7 NFR5.3 BR6.1 menu original alias/IDs and failed loading nonblocking (1.394667ms)
+✔ NFR2.8 duplicate delivered/in-flight/outcome-unknown has no replay; late rejection observed (33.991167ms)
+✔ R-01 NFR2.8 known rejected reply redelivery reuses result without repeating actual save/menu (11.39625ms)
+✔ R-02 AC1.1.2 valid missing event IDs process separately without a fabricated dedup key (0.408333ms)
+✔ R-03 NFR5.3 NFR4.2 long LINE body reserves all evidence/storage/external notices within platform limits (0.257584ms)
+✔ NFR2.1 NFR2.8 BR7.1 one batch budget, no new event after deadline and unsupported skipped (16.349708ms)
+✔ AC3.1.1 AC3.1.2 AC3.2.1 NFR1.6 NFR2.5 BR3.1 real private file reread and isolation (8.435209ms)
+✔ AC3.1.1 AC3.2.3 NFR1.7 BR3.4 Firestore legacy read only, new session and stable text projection (10.614542ms)
+✔ AC3.1.3 NFR2.5 BR3.3 malformed original remains intact and failed reads do not save (3.979417ms)
+✔ NFR2.6 BR3.4 unknown write latch resolve (17.851208ms)
+✔ NFR2.6 BR3.4 unknown write latch reject (16.837333ms)
+✔ NFR2.6 BR3.4 unknown write latch never (16.803959ms)
+✔ NFR5.2 NFR2.4 BR3.2 five requests serialize same identity and B is independent (9.04625ms)
+✔ NFR2.4 NFR2.1 expired queued operation has zero side effects (11.754417ms)
+✔ AC3.1.1 NFR1.6 BR3.1 necessary aggregate excludes image and secrets (0.64025ms)
+✔ AC3.2.3 NFR1.2 BR3.2 identity namespaces and invalid client identities (0.218584ms)
+✔ NFR2.5 BR3.3 reject malformed state and foreign turns (0.369958ms)
+✔ AC10.1.2 NFR4.1 BR10.1 native labels, focus, alt and width rules (DOM/source evidence only) (35.503125ms)
+✔ AC9.1.2 AC9.1.3 AC4.1.2 NFR1.4 safe render and each card/question actual click (9.316708ms)
+{"requestId":"125ea533-fc9c-42dd-82e6-98efd1600146","elapsedMs":2,"action":"text","memoryRead":"empty","memoryWrite":"saved"}
+{"requestId":"cd99fb76-96ac-4622-b469-cbf8569ec524","elapsedMs":2,"action":"text","memoryRead":"loaded","memoryWrite":"saved"}
+{"requestId":"e2802093-19b7-42d2-b5fe-761c85eec49b","elapsedMs":10,"action":"text","memoryRead":"loaded","memoryWrite":"saved"}
+{"requestId":"27761649-8e12-467d-b2c9-786534a306f9","elapsedMs":2,"action":"text","memoryRead":"loaded","memoryWrite":"saved"}
+{"requestId":"07199a91-1c04-48b7-8eb0-253718fbbdb4","elapsedMs":2,"action":"set-mode","memoryRead":"loaded","memoryWrite":"saved"}
+{"requestId":"95a32b3d-dbd3-40d8-a8d6-7b52077fb83b","elapsedMs":3,"action":"text","memoryRead":"loaded","memoryWrite":"not-attempted"}
+{"requestId":"d1ce2ff2-d297-46ec-93f1-0d517ebfa878","elapsedMs":1,"action":"image","memoryRead":"loaded","memoryWrite":"not-attempted"}
+{"requestId":"b253cd6e-7d57-46a8-b6b4-311ef10661c0","elapsedMs":1,"action":"set-mode","memoryRead":"loaded","memoryWrite":"saved"}
+{"requestId":"e3c6554e-1092-4e05-b39b-b980c2911e3b","elapsedMs":0,"action":"guide","memoryRead":"loaded","memoryWrite":"not-attempted"}
+{"requestId":"275209b7-208d-4ce2-895a-1fa49b1b3c16","elapsedMs":0,"action":"guide","memoryRead":"loaded","memoryWrite":"not-attempted"}
+{"requestId":"30437d8f-1257-4744-8e18-8c30bbf10e0a","elapsedMs":0,"action":"guide","memoryRead":"loaded","memoryWrite":"not-attempted"}
+{"requestId":"9259df61-6e99-44b0-9023-429d3df88d04","elapsedMs":0,"action":"guide","memoryRead":"loaded","memoryWrite":"not-attempted"}
+{"requestId":"7578e2d0-25ea-49ef-9225-050e1ce2d7b1","elapsedMs":0,"action":"guide","memoryRead":"loaded","memoryWrite":"not-attempted"}
+{"requestId":"c2a78527-2905-4483-94a8-68486b6b6649","elapsedMs":0,"action":"guide","memoryRead":"loaded","memoryWrite":"not-attempted"}
+{"requestId":"3b5141a4-c354-4ad1-ae65-297ba5cca5ff","elapsedMs":1,"action":"set-menu","memoryRead":"loaded","memoryWrite":"saved"}
+{"requestId":"4a4f0454-8222-42ae-8e9d-a0e7ffed6928","elapsedMs":5,"action":"set-menu","memoryRead":"loaded","memoryWrite":"saved"}
+{"requestId":"25cb10f8-dff8-4f08-b9ec-87de68909be1","elapsedMs":1,"action":"birthday","memoryRead":"loaded","memoryWrite":"saved"}
+{"requestId":"262ce919-c7cd-4147-8d2b-05a23c65a96a","elapsedMs":1,"action":"life-path","memoryRead":"loaded","memoryWrite":"saved"}
+{"requestId":"b69b15b7-a2e5-44a2-8a6e-e9169ec73ba1","elapsedMs":1,"action":"image","memoryRead":"loaded","memoryWrite":"saved"}
+{"requestId":"041a4f3d-8e52-4886-b3e7-d859165fe2eb","elapsedMs":0,"action":"recall","memoryRead":"loaded","memoryWrite":"not-attempted"}
+✔ AC1.2.1 AC1.2.2 AC1.2.3 AC2.1.3 AC2.2.2 AC4.2.2 AC5.1.1 AC6.1.1 AC6.2.1 AC6.2.2 AC6.2.3 AC10.1.1 all actual DOM controls through HTTP (168.540542ms)
+✔ AC7.1.1 AC7.1.2 NFR2.2 finite waiting even when fetch ignores abort, then recover without retry (24.742208ms)
+✔ AC3.2.1 NFR2.9 switching B ignores late A result (5.857791ms)
+ℹ tests 64
+ℹ suites 0
+ℹ pass 64
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 625.642459
+
+EXIT_CODE=0

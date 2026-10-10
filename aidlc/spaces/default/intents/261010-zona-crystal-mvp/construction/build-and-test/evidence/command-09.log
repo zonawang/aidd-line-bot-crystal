@@ -1,0 +1,16 @@
+$ node --test test/u1-zona-crystal-bot/delivery.test.js
+warm10ms=[2,2,2,1,2,2,2,2,2,2]
+✔ AC3.1.2 AC3.2.1 AC3.2.2 AC10.2.1 NFR2.3 NFR2.5 NFR5.1 actual spawn restart and ten warm actions <=2s (217.0065ms)
+✔ AC10.2.4 NFR1.4 NFR5.4 BR10.4 safe logging protects free-form allowed field values as well as unknown keys (0.222833ms)
+✔ AC10.2.2 AC10.2.3 NFR3.1 NFR5.6 same exact CI command and evidence separates external untested (3.118167ms)
+✔ patched transitive uuid v4 compatibility and all real SDK packages load (350.5875ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 623.189791
+
+EXIT_CODE=0

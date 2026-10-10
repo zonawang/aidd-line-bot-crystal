@@ -1,0 +1,27 @@
+$ node --test test/u1-zona-crystal-bot/http.test.js
+{"requestId":"572387a3-cdab-4505-9fea-c7fabb4383a1","elapsedMs":2,"action":"birthday","memoryRead":"empty","memoryWrite":"saved"}
+✔ AC1.1.1 AC10.1.3 NFR5.5 real HTTP birthday journey, health and private paths (38.746291ms)
+✔ NFR1.1 NFR1.3 NFR1.4 NFR1.5 real HTTP raw signature/8MiB limit, symlink and safe error (69.749458ms)
+{"requestId":"2c4fdc43-c412-4a86-8e1c-37acc298763b","action":"failed","errorCode":"UNSUPPORTED_IMAGE"}
+{"requestId":"0e63d6f2-f722-47e4-82a1-59cc0deda7b2","action":"failed","errorCode":"UNSUPPORTED_IMAGE"}
+{"requestId":"edcd07c5-af9f-418f-850f-294192535177","action":"failed","errorCode":"UNSUPPORTED_IMAGE"}
+{"requestId":"fc4bd1f5-e770-44f2-aefe-f335fb3d2bd5","elapsedMs":1,"action":"text","memoryRead":"empty","memoryWrite":"saved"}
+✔ AC2.2.3 local image malformed base64/MIME and real configuration shortage recover (7.33ms)
+{"requestId":"8851a9eb-fe1e-4186-9d42-fd0809464878","action":"failed","errorCode":"INVALID_INPUT"}
+{"requestId":"277551c4-eaf6-4c70-ae33-9354f72630b3","action":"failed","errorCode":"INVALID_INPUT"}
+{"requestId":"e4cca20f-5089-496c-86b5-e04e37218caa","action":"failed","errorCode":"INVALID_INPUT"}
+{"requestId":"dd6fe70e-dce4-4ebf-b17a-d194e44b1d04","action":"failed","errorCode":"INVALID_BIRTHDAY"}
+{"requestId":"9c7e53f3-68eb-4c50-bbc3-b75f802852c8","action":"failed","errorCode":"PAYLOAD_TOO_LARGE"}
+{"requestId":"0a392a65-5552-4add-80e9-3acf3d8c3c08","action":"failed","errorCode":"INVALID_INPUT"}
+{"requestId":"aa2f4aec-19a0-43aa-b07a-096d8dce8fc3","action":"failed","errorCode":"INVALID_INPUT"}
+✔ NFR1.2 NFR1.3 NFR1.5 HTTP injection, host/origin and format rejected (11.311916ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 285.494209
+
+EXIT_CODE=0
