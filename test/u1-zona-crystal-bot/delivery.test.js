@@ -187,7 +187,7 @@ test('AC10.2.2 AC10.2.3 NFR3.1 NFR5.6 same exact CI command and evidence separat
     assert.ok(demo.includes(input));
   const { testFiles } =
     await import('../../scripts/u1-zona-crystal-bot/test-files.mjs');
-  assert.equal(testFiles.length, 9);
+  assert.ok(testFiles.includes('test/u1-zona-crystal-bot/public-demo.test.js'));
   for (const file of testFiles)
     assert.ok((await readFile(file, 'utf8')).includes('test('));
 });

@@ -1,7 +1,7 @@
 import express from 'express';
 import { realpath } from 'node:fs/promises';
 import path from 'node:path';
-import { randomUUID } from 'node:crypto';
+import { randomBytes, randomUUID } from 'node:crypto';
 import { validateAction } from './validation.js';
 import { SafeError, newDeadline } from './deadline.js';
 import { safeLog } from './logger.js';
@@ -20,7 +20,7 @@ export function httpApp({ config, experience, webhook, log = safeLog }) {
     next();
   });
   app.get('/health', (_req, res) => res.json({ ok: true }));
-  if (webhook)
+  if (webhook && config.appMode !== 'public-demo')
     app.post(
       '/webhook',
       express.raw({ type: 'application/json', limit: '8mb' }),
@@ -31,14 +31,41 @@ export function httpApp({ config, experience, webhook, log = safeLog }) {
     (req, res, next) => {
       if (config.appMode === 'line')
         return res.status(404).json({ error: { code: 'NOT_FOUND' } });
-      const host = req.hostname;
-      if (!['localhost', '127.0.0.1', '[::1]', '::1'].includes(host))
-        return next(new SafeError('INVALID_INPUT', 400));
-      if (
-        req.get('origin') &&
-        req.get('origin') !== req.protocol + '://' + req.get('host')
-      )
-        return next(new SafeError('INVALID_INPUT', 400));
+      if (config.appMode === 'public-demo') {
+        const origin = config.publicDemoOrigin;
+        if (
+          req.get('host') !== new URL(origin).host ||
+          (req.get('origin') && req.get('origin') !== origin) ||
+          req.get('sec-fetch-site') === 'cross-site'
+        )
+          return next(new SafeError('INVALID_INPUT', 400));
+        const cookies = (req.get('cookie') || '').split(';');
+        const value = cookies
+          .map((part) => part.trim())
+          .find((part) => part.startsWith('__Host-zona_demo='))
+          ?.slice('__Host-zona_demo='.length);
+        req.demoSession = /^[a-f0-9]{64}$/.test(value || '')
+          ? value
+          : randomBytes(32).toString('hex');
+        if (req.demoSession !== value)
+          res.cookie('__Host-zona_demo', req.demoSession, {
+            secure: true,
+            httpOnly: true,
+            sameSite: 'lax',
+            path: '/',
+            maxAge: 30 * 24 * 60 * 60 * 1000,
+          });
+        res.set('Cache-Control', 'private, no-store');
+      } else {
+        const host = req.hostname;
+        if (!['localhost', '127.0.0.1', '[::1]', '::1'].includes(host))
+          return next(new SafeError('INVALID_INPUT', 400));
+        if (
+          req.get('origin') &&
+          req.get('origin') !== req.protocol + '://' + req.get('host')
+        )
+          return next(new SafeError('INVALID_INPUT', 400));
+      }
       if (req.method === 'POST' && !req.is('application/json'))
         return next(new SafeError('INVALID_INPUT', 415));
       next();
@@ -51,14 +78,19 @@ export function httpApp({ config, experience, webhook, log = safeLog }) {
       !['A', 'B'].includes(req.query.user)
     )
       return next(new SafeError('INVALID_INPUT', 400));
-    experience
-      .state({ id: req.query.user }, newDeadline())
-      .then((r) => res.json(r), next);
+    const person = req.demoSession
+      ? { source: 'public-demo', id: req.demoSession + ':' + req.query.user }
+      : { id: req.query.user };
+    experience.state(person, newDeadline()).then((r) => res.json(r), next);
   });
   app.post('/api/demo/interactions', async (req, res, next) => {
     const start = performance.now();
     try {
       const action = validateAction(req.body);
+      if (req.demoSession) {
+        action.source = 'public-demo';
+        action.id = req.demoSession + ':' + action.id;
+      }
       const r = await experience.interact(action, newDeadline());
       log({
         requestId: r.requestId,

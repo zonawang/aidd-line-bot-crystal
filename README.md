@@ -2,6 +2,8 @@
 
 同一個 Node.js 程序整合水晶文字／圖片諮詢、生日生命靈數、三卡、追問、四角色、Echo、六指南、雙選單與持久記憶。本機無金鑰可使用清楚標示的教學範例；LINE、Gemini／Vertex、Firestore 真實路徑保留。
 
+公開體驗：[Zona Crystal 教學網站](https://zona-crystal-demo-3sv3zqjszq-de.a.run.app/)。不需登入或金鑰；每個瀏覽器有獨立的 A／B 示範記憶。使用教學範例回覆與圖片範例，請勿輸入敏感資料。
+
 ## 本機啟動
 
 需要 Node.js 24（開發驗證：24.18.0）及 npm。
@@ -18,7 +20,9 @@ npm run check:u1
 npm audit
 ```
 
-check:u1 共用本機與 CI 的格式、lint 及九個指定測試檔；任一失敗皆回傳非零，CI 阻擋合併。自訂 Minimal 測試策略沒有新增百分比門檻。[API](docs/zona-crystal-api.md) 與 [證據／限制](docs/zona-crystal-evidence.md) 說明邊界。
+check:u1 共用本機與 CI 的格式、lint 及十個指定測試檔；任一失敗皆回傳非零，CI 阻擋合併。自訂 Minimal 測試策略沒有新增百分比門檻。[API](docs/zona-crystal-api.md) 與 [證據／限制](docs/zona-crystal-evidence.md) 說明邊界。
+
+公開教學網站的部署設定、費用與後續更新方式見 [Cloud Run 部署說明](docs/cloud-run-deployment.md)。
 
 ## 設定與真實模式
 

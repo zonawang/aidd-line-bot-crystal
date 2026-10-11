@@ -4,11 +4,34 @@ export function configFrom(env = process.env) {
   const botMode = env.BOT_MODE || 'example';
   const memoryAdapter = env.MEMORY_ADAPTER || 'local';
   if (
-    !['demo', 'line'].includes(appMode) ||
+    !['demo', 'line', 'public-demo'].includes(appMode) ||
     !['example', 'real'].includes(botMode) ||
     !['local', 'firestore'].includes(memoryAdapter)
   )
     throw new Error('INVALID_CONFIG');
+  let publicDemoOrigin;
+  if (appMode === 'public-demo') {
+    try {
+      const url = new URL(env.PUBLIC_DEMO_ORIGIN);
+      if (
+        url.protocol !== 'https:' ||
+        url.username ||
+        url.password ||
+        url.pathname !== '/' ||
+        url.search ||
+        url.hash ||
+        botMode !== 'example' ||
+        (memoryAdapter === 'firestore' &&
+          (!env.FIRESTORE_DATABASE_ID ||
+            env.FIRESTORE_DATABASE_ID === '(default)' ||
+            env.FIRESTORE_COLLECTION !== 'zona_crystal_public_demo'))
+      )
+        throw new Error('INVALID_CONFIG');
+      publicDemoOrigin = url.origin;
+    } catch {
+      throw new Error('INVALID_PUBLIC_DEMO_CONFIG');
+    }
+  }
   const memoryDir = path.resolve(env.MEMORY_DIR || '.zona-data');
   const publicDir = path.resolve('public');
   if (memoryDir === publicDir || memoryDir.startsWith(publicDir + path.sep))
@@ -34,6 +57,7 @@ export function configFrom(env = process.env) {
     memoryDir,
     publicDir,
     imageOrigins: [...imageOrigins],
+    publicDemoOrigin,
     host: env.HOST || '127.0.0.1',
     port: Number(env.PORT || 8080),
     env,

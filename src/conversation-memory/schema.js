@@ -3,10 +3,11 @@ import { parseBirthday } from '../crystal-knowledge/knowledge.js';
 export const APP_NAME = 'CrystalAstrology';
 export function identity(source, id) {
   if (
-    !['demo', 'line'].includes(source) ||
+    !['demo', 'line', 'public-demo'].includes(source) ||
     typeof id !== 'string' ||
     !id ||
-    (source === 'demo' && !['A', 'B'].includes(id))
+    (source === 'demo' && !['A', 'B'].includes(id)) ||
+    (source === 'public-demo' && !/^[a-f0-9]{64}:[AB]$/.test(id))
   )
     throw new Error('INVALID_IDENTITY');
   return { userKey: APP_NAME + ':' + source + ':' + id, source, id };

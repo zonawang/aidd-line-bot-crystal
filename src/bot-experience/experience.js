@@ -23,7 +23,10 @@ export function experience({ memory, consultation, line }) {
         return {
           contractVersion: '1.0.0',
           requestId: randomUUID(),
-          state: stateProjection(snapshot, id),
+          state: stateProjection(
+            snapshot,
+            source === 'public-demo' ? id.slice(-1) : id,
+          ),
           memoryStatus: { read, write: 'not-attempted' },
         };
       },
@@ -167,7 +170,7 @@ export function experience({ memory, consultation, line }) {
                 : '目前選單：' + next.menu,
             ),
             menuStatus: status,
-            evidenceLabels: source === 'demo' ? ['LINE 操作模擬'] : [],
+            evidenceLabels: source !== 'line' ? ['LINE 操作模擬'] : [],
           };
         } else if (action === 'recall') {
           result = base(
@@ -239,7 +242,10 @@ export function experience({ memory, consultation, line }) {
         return {
           contractVersion: '1.0.0',
           requestId,
-          state: stateProjection(next, id),
+          state: stateProjection(
+            next,
+            source === 'public-demo' ? id.slice(-1) : id,
+          ),
           memoryStatus: {
             read,
             write,

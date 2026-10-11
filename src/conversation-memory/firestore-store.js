@@ -6,9 +6,14 @@ export function firestoreStore(env = {}, injected) {
   async function collection() {
     if (!client) {
       const { Firestore } = await import('@google-cloud/firestore');
-      client = new Firestore({ projectId: env.GCP_PROJECT });
+      client = new Firestore({
+        projectId: env.GCP_PROJECT,
+        ...(env.FIRESTORE_DATABASE_ID
+          ? { databaseId: env.FIRESTORE_DATABASE_ID }
+          : {}),
+      });
     }
-    return client.collection('crystal_memories');
+    return client.collection(env.FIRESTORE_COLLECTION || 'crystal_memories');
   }
   function who(userKey) {
     const prefix = 'CrystalAstrology:';
